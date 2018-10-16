@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 135.46666 135.46667"
+   height="512"
+   width="512">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-161.53331)"
+     id="layer1">
+    <rect
+       y="161.37138"
+       x="0.26726952"
+       height="31.939945"
+       width="135.31548"
+       id="rect815"
+       style="opacity:1;fill:#ffcc00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
+    <text
+       id="text819"
+       y="186.46938"
+       x="2.8157265"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:2.60044932px;line-height:14.23746014px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9354583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-size:26.00449562px;stroke:none;stroke-width:0.9354583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         y="186.46938"
+         x="2.8157265"
+         id="tspan817">SUPERIOR</tspan></text>
+    <text
+       id="text819-0"
+       y="291.67004"
+       x="16.873131"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:10.91707897px;line-height:59.77100754px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffcc00;fill-opacity:1;stroke:#ffac00;stroke-width:3.99040723;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-size:109.17081451px;fill:#ffcc00;stroke:#ffac00;stroke-width:3.99040723;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         y="291.67004"
+         x="16.873131"
+         id="tspan817-8">JS</tspan></text>
+  </g>
+</svg>

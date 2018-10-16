@@ -1,0 +1,40 @@
+[] == []::false
+true == ["1"]::true
+typeof void 0 == "string"::false
+typeof null == "object"::true
+typeof ("50" + 5) == "string"::true
+typeof ("50" - 5) == "string"::false
+isNaN(50 / 0)::false
+isNaN("-Infinity")::false
+typeof "-Infinity" == "number"::false
+isNaN(void 0)::true
+[] instanceof Array::true
+"" instanceof String::false
+new String("") instanceof String::true
+typeof 1.25.toFixed(1) == "string"::true
+/ /g instanceof RegExp::true
+[] == 0::true
+"".concat([] - 0) == "0"::true
+"" - 0 == "0"::false
+isNaN(0 / 0)::true
+isNaN(0 + "1" / "0")::false
+isNaN([])::false
+isNaN({})::true
+1 == 1..toFixed(2)::true
+1 === 1..toFixed(2)::false
+[].concat(-"0") == -0::true
+void 0 === null::false
+void 0 == null::true
+!void 0::true
+typeof Object == "object"::false
+!Array.isArray()::true
+typeof new String() == "string"::false
+Math instanceof Object::true
+Math.abs("-5" + 5) == 55::true
+Math.abs("-5" -2) == 7::true
+void 0 ? true : void 0 === null::false
+Math.pow(4, 2 + "0" - "19") == 4::true
+"a".charAt(1) == []::true
+"abc".split() === ["abc"]::false
+"1:3".split(":").map(x => x * (2 + "0" - 17)).join(":").replace(/:/g, "") === 39::false
+["0"] == ""::false
