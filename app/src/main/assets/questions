@@ -38,3 +38,9 @@ Math.pow(4, 2 + "0" - "19") == 4::true
 "abc".split() === ["abc"]::false
 "1:3".split(":").map(x => x * (2 + "0" - 17)).join(":").replace(/:/g, "") === 39::false
 ["0"] == ""::false
+~2 + ~[] == -3::false
+~2 + ~"" === -4::true
+void 0 == !!void 0::false
+~Infinity + 1 == 0::true
+~Infinity/~~Infinity == -Infinity::true
+~Infinity/~!~~Infinity*~!~Infinity == 0::false
