@@ -1,5 +1,5 @@
 /*
-* SuperiorJS v1.0
+* SuperiorJS v1.1
 * Copyright (C) Simon Raichl 2018
 * MIT License
 * Use this as you want, share it as you want, do basically whatever you want with this :)
@@ -14,6 +14,8 @@ import android.widget.Button
 import android.widget.TextView
 import java.lang.Float.parseFloat
 import java.lang.Integer.parseInt
+import android.os.AsyncTask
+import java.net.URL
 
 class Main : AppCompatActivity() {
 
@@ -30,15 +32,33 @@ class Main : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main)
         init()
-        appendEventListeners()
-        newQuery()
     }
 
     private fun init(){
-        applicationContext.assets.open("questions").bufferedReader().use {
-            allQuestionsString = it.readText()
+        class DownloadResources : AsyncTask<Void, Void, String>() {
+            override fun doInBackground(vararg params: Void): String {
+                return try {
+                    URL("https://raw.githubusercontent.com/VelociraptorCZE/SuperiorJS/master/app/src/main/assets/questions").readText()
+                } catch (e: Exception){
+                    ""
+                }
+            }
+            override fun onPostExecute(content: String) {
+                if (content == "") {
+                    applicationContext.assets.open("questions").bufferedReader().use {
+                        allQuestionsString = it.readText()
+                    }
+                }
+                else{
+                    allQuestionsString = content
+                }
+
+                allQuestionsNum = Parser().getAllQuestions(allQuestionsString).size
+                appendEventListeners()
+                newQuery()
+            }
         }
-        allQuestionsNum = Parser().getAllQuestions(allQuestionsString).size
+        DownloadResources().execute()
     }
 
     private fun appendEventListeners(){

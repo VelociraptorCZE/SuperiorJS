@@ -1,5 +1,5 @@
 /*
- * SuperiorJS v1.0
+ * SuperiorJS v1.1
  * Copyright (C) Simon Raichl 2018
  * MIT License
  * Use this as you want, share it as you want, do basically whatever you want with this :)
